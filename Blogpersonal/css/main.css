@@ -10,12 +10,28 @@ body {
 }
 
 .a-container {
+    font-family: bebas neue;
     width: 100%;
     display: grid;
     grid-template-columns: 900px 100px 140px 100px;
     grid-template-rows: 40px;
     background-color: none;
 }
+
+.a-container a {
+    
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.a-container a:hover{
+    text-decoration: underline;
+}
+
 .a1 {
     grid-column: 2;
     margin-top: 20px;
@@ -85,28 +101,30 @@ a {
     margin-bottom: 20px;
 }
 
-.blog-container {
+.sobre-mi-container {
     display: grid;
     grid-template-columns:  1fr 1fr;
-    background-color: rgb(231, 206, 190);
+    background-color: rgb(175, 171, 167);
     height: 100vh;
 }
 
-.blog-img {
+.sobre-mi-img {
     justify-content: center;
     align-items: center;
     overflow: hidden;
     text-align: center;
     padding: 20px;
+    grid-column: 1;
 }
 
-.blogs-news-info-container {
-    font-family: Arial, Helvetica, sans-serif;
+.sobre-mi-info-container {
+    grid-column: 2;
+    font-family: bebas neue;
     margin-top: 150px;
     margin-left: 20px;
 }
 
-.blogs-news-info-container p {
+.sobre-mi-info-container p {
     font-size: 30px;
 }
 
@@ -131,31 +149,25 @@ a {
 }
 
 .text-container {
-    margin-top: 20px;
     max-width: 550px;
     margin-left: 20px;
     width: 100%;
 }
 
 .text-container h2 {
-    font-size: 24px;
+    font-size: 30px;
 }
 
 .text-container p {
     text-align: justify;
-    font-family: Oswald;
+    font-family: bebas neue;
     font-weight: 300px;
-    font-size: 18px;
+    font-size: 25px;
 }
-
-.hr-container {
-    padding: 15px 200px;
-    background-color: rgb(255, 196, 0);
-}
-
-
 
 .skill-info {
+    font-family: bebas neue;
+    font-size: 30px;
     display: grid;
     grid-template-columns:1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 200px 200px;
@@ -169,7 +181,7 @@ a {
 
 .html {
     padding: 10px 29px 152px;
-    background-color: yellowgreen;
+    background-color: rgb(250, 218, 172);
     grid-row: 1;
     border-radius: 17px;
     grid-column: 3;
@@ -180,34 +192,85 @@ a {
     padding: 30px 45px 170px;
     grid-row: 1;
     border-radius: 17px;
-    background-color: yellowgreen;
+    background-color: rgb(250, 218, 172);
 }
 
 .python {
     grid-column: 4;
     padding: 30px 47px 170px;
-    background-color: yellowgreen;
+    background-color: rgb(250, 218, 172);
     border-radius: 17px;
     grid-row: 1;
 }
 
 .css-text {
     grid-column: 2;
-    margin-top: 70px;
-    margin-left: 90px;
+    margin-top: 50px;
+    margin-left: 75px;
     grid-row: 2;
 }
 
 .html-text {
     grid-column: 3;
-    margin-top: 70px;
-    margin-left: 120px;
+    margin-top: 50px;
+    margin-left: 100px;
     grid-row: 2;
 }
 
 .python-text {
     grid-column: 4;
-    margin-top: 70px;
-    margin-left: 145px;
+    margin-top: 50px;
+    margin-left: 125px;
     grid-row: 2;
 }
+
+.contactme-container {
+    height: 190px;
+    width: 100%;
+    background-color: rgb(49, 48, 48);
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.contact-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 488px;
+    justify-content: space-between;
+    margin-bottom: 25px
+}
+
+.contact-logo-container a {
+    margin: 10px;
+}
+
+.div1 {
+    grid-column: 1;
+    color: white;
+    
+}
+
+.div2 {
+    grid-column: 3;
+    color: white;
+}
+
+.p1 {
+    margin-left: 235px;
+}
+
+.p2 {
+    margin-left: 140px;
+}
+
+.h31-contactme {
+    margin-left: 250px;
+    margin-top: 35px;
+}
+
+.h32-contactme {
+    margin-left: 190px;
+    margin-top: 35px;
+}
+
