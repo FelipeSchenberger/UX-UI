@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;600&display=swap');
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.a-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 900px 100px 140px 100px;
+    grid-template-rows: 40px;
+    background-color: none;
+}
+.a1 {
+    grid-column: 2;
+    margin-top: 20px;
+    grid-row: 1;
+}
+.a2 {
+    grid-column: 3;
+    margin-top: 20px;
+    grid-row: 1;
+}
+.a3 {
+    grid-column: 4;
+    margin-top: 20px;
+    grid-row: 1;
+}
+
+main section {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 10px 1000px;
+    grid-template-rows: 200px 220px 200px; 
+}
+
+main section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("../assets/tianjin-2185510_1280.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(2px);
+    z-index: -1;
+}
+
+.home-main-text{
+    grid-column: 2;
+    margin-top: 22%;
+    margin-left: 25.5%;
+    color: white;
+    font-family: Bebas Neue;
+    text-align: center;
+    font-size: 100px;
+    letter-spacing: 3px;
+}
+
+a {
+    text-decoration: none;
+    color:rgb(182, 169, 169);
+    width: 30px;
+    height: 30px;
+}
+
+.main-logo-container a:hover{
+    color: rgb(90, 87, 87);
+    filter: blur(1px);
+}
+
+.main-logo-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-row: 2;
+    grid-column: 1;
+    margin-bottom: 20px;
+}
+
+.blog-container {
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    background-color: rgb(231, 206, 190);
+    height: 100vh;
+}
+
+.blog-img {
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+}
+
+.blogs-news-info-container {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 150px;
+    margin-left: 20px;
+}
+
+.blogs-news-info-container p {
+    font-size: 30px;
+}
+
+.pics {
+    justify-content: center;
+    align-items: center;
+    margin-top: 37px;
+    margin-bottom: 60px;
+    margin-left: 40px;
+    display: flex;
+    transition: all 0.8s ease;
+}
+  
+.pics img {
+    width: 130px;
+    height: 450px;
+    transition: all 0.8s ease;
+}
+  
+.pics img:hover {
+    width: 350px;
+}
+
+.text-container {
+    margin-top: 20px;
+    max-width: 550px;
+    margin-left: 20px;
+    width: 100%;
+}
+
+.text-container h2 {
+    font-size: 24px;
+}
+
+.text-container p {
+    text-align: justify;
+    font-family: Oswald;
+    font-weight: 300px;
+    font-size: 18px;
+}
+
+.hr-container {
+    padding: 15px 200px;
+    background-color: rgb(255, 196, 0);
+}
+
+
+
+.skill-info {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+}
+
+.h2-container {
+    align-items: center;
+    justify-content: center;
+    display: grid;
+}
+
+.html {
+    padding: 10px 29px 152px;
+    background-color: yellowgreen;
+    grid-row: 1;
+    border-radius: 17px;
+    grid-column: 3;
+}
+
+.css {
+    grid-column: 2;
+    padding: 30px 45px 170px;
+    grid-row: 1;
+    border-radius: 17px;
+    background-color: yellowgreen;
+}
+
+.python {
+    grid-column: 4;
+    padding: 30px 47px 170px;
+    background-color: yellowgreen;
+    border-radius: 17px;
+    grid-row: 1;
+}
+
+.css-text {
+    grid-column: 2;
+    margin-top: 70px;
+    margin-left: 90px;
+    grid-row: 2;
+}
+
+.html-text {
+    grid-column: 3;
+    margin-top: 70px;
+    margin-left: 120px;
+    grid-row: 2;
+}
+
+.python-text {
+    grid-column: 4;
+    margin-top: 70px;
+    margin-left: 145px;
+    grid-row: 2;
+}
